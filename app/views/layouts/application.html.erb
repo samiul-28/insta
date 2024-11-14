@@ -20,6 +20,11 @@
 
   <body>
     <%= render "shared/navbar" if current_user %>
+      <% flash.each do |key, message| %>
+        <div class="flash <%= key %>">
+          <%= message %>
+        </div>
+      <% end %>
     <%= yield %>
     <%= render "shared/footer" if current_user %>
   </body>

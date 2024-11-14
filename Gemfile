@@ -62,3 +62,5 @@ gem "sassc-rails", "~> 2.1"
 
 
 gem "devise", "~> 4.9"
+
+gem "toastr-rails", "~> 1.0"
